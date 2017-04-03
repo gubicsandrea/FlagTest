@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ready_button_text">Kész</string>
+    <string name="title">Európai zászlók</string>
+    <string name="file_name">euroflags_hu.test</string>
+    <string name="not_all_answered">Még nem válaszoltad meg az összes kérdést.</string>
+    <string name="test_result">%1$d jó választ adtál.</string>
+</resources>

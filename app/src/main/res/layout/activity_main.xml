@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.flagtest.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/full_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/Title" />
+
+            <LinearLayout
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    style="@style/Images"
+                    android:src="@drawable/afganistan" />
+
+                <RadioGroup
+                    android:id="@+id/group1"
+                    style="@style/RadioGroups">
+
+                    <RadioButton
+                        android:id="@+id/group1_option1"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group1_option2"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group1_option3"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group1_option4"
+                        style="@style/RadioButtons" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        <TextView
+            style="@style/Separator" />
+
+
+            <LinearLayout
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    style="@style/Images"
+                    android:src="@drawable/afganistan" />
+
+                <RadioGroup
+                    android:id="@+id/group2"
+                    style="@style/RadioGroups">
+
+                    <RadioButton
+                        android:id="@+id/group2_option1"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group2_option2"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group2_option3"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group2_option4"
+                        style="@style/RadioButtons" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        <TextView
+            style="@style/Separator" />
+
+
+
+            <LinearLayout
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    style="@style/Images"
+                    android:src="@drawable/afganistan" />
+
+                <RadioGroup
+                    android:id="@+id/group3"
+                    style="@style/RadioGroups">
+
+                    <RadioButton
+                        android:id="@+id/group3_option1"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group3_option2"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group3_option3"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group3_option4"
+                        style="@style/RadioButtons" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        <TextView
+            style="@style/Separator" />
+
+
+
+            <LinearLayout
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image4"
+                    style="@style/Images"
+                    android:src="@drawable/afganistan" />
+
+                <RadioGroup
+                    android:id="@+id/group4"
+                    style="@style/RadioGroups">
+
+                    <RadioButton
+                        android:id="@+id/group4_option1"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group4_option2"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group4_option3"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group4_option4"
+                        style="@style/RadioButtons" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        <TextView
+            style="@style/Separator" />
+
+            <LinearLayout
+                android:id="@+id/question5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image5"
+                    style="@style/Images"
+                    android:src="@drawable/afganistan" />
+
+                <RadioGroup
+                    android:id="@+id/group5"
+                    style="@style/RadioGroups">
+
+                    <RadioButton
+                        android:id="@+id/group5_option1"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group5_option2"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group5_option3"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group5_option4"
+                        style="@style/RadioButtons" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        <TextView
+            style="@style/Separator" />
+
+            <LinearLayout
+                android:id="@+id/question6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image6"
+                    style="@style/Images"
+                    android:src="@drawable/afganistan" />
+
+                <RadioGroup
+                    android:id="@+id/group6"
+                    style="@style/RadioGroups">
+
+                    <RadioButton
+                        android:id="@+id/group6_option1"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group6_option2"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group6_option3"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group6_option4"
+                        style="@style/RadioButtons" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        <TextView
+            style="@style/Separator" />
+
+
+            <LinearLayout
+                android:id="@+id/question7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image7"
+                    style="@style/Images"
+                    android:src="@drawable/afganistan" />
+
+                <RadioGroup
+                    android:id="@+id/group7"
+                    style="@style/RadioGroups">
+
+                    <RadioButton
+                        android:id="@+id/group7_option1"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group7_option2"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group7_option3"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group7_option4"
+                        style="@style/RadioButtons" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        <TextView
+            style="@style/Separator" />
+
+
+            <LinearLayout
+                android:id="@+id/question8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image8"
+                    style="@style/Images"
+                    android:src="@drawable/albania" />
+
+                <RadioGroup
+                    android:id="@+id/group8"
+                    style="@style/RadioGroups">
+
+                    <RadioButton
+                        android:id="@+id/group8_option1"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group8_option2"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group8_option3"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group8_option4"
+                        style="@style/RadioButtons" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        <TextView
+            style="@style/Separator" />
+
+
+            <LinearLayout
+                android:id="@+id/question9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image9"
+                    style="@style/Images"
+                    android:src="@drawable/albania" />
+
+                <RadioGroup
+                    android:id="@+id/group9"
+                    style="@style/RadioGroups">
+
+                    <RadioButton
+                        android:id="@+id/group9_option1"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group9_option2"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group9_option3"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group9_option4"
+                        style="@style/RadioButtons" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        <TextView
+            style="@style/Separator" />
+
+            <LinearLayout
+                android:id="@+id/question10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image10"
+                    style="@style/Images"
+                    android:src="@drawable/albania" />
+
+                <RadioGroup
+                    android:id="@+id/group10"
+                    style="@style/RadioGroups">
+
+                    <RadioButton
+                        android:id="@+id/group10_option1"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group10_option2"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group10_option3"
+                        style="@style/RadioButtons" />
+
+                    <RadioButton
+                        android:id="@+id/group10_option4"
+                        style="@style/RadioButtons" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+        <Button
+            android:id="@+id/ready_button"
+            style="@style/ReadyButton"
+            android:onClick="checkTest"/>
+
+    </LinearLayout>
+</ScrollView>
+

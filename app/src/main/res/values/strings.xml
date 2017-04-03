@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name" translatable="false">FlagTest</string>
+    <string name="title">European Flags</string>
+    <string name="option_text" translatable="false"> </string>
+    <string name="ready_button_text">Ready</string>
+    <string name="file_name">euroflags.test</string>
+    <string name="not_all_answered">You haven\'t answered all the questions yet.</string>
+    <string name="test_result">You have %1$d right answers.</string>
+</resources>

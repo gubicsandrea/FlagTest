@@ -22,6 +22,42 @@ import static java.security.AccessController.getContext;
 
 
 /**
+ * The Question class builder abstraction
+ */
+interface QuestionBuilder {
+    /**
+     * Sets the image field of a Question object
+     *
+     * @param image the image name for the question
+     * @return
+     */
+    QuestionBuilder addImage(final String image);
+
+    /**
+     * Sets the options field of a Question object
+     *
+     * @param options the 4 possible answers for the question
+     * @return
+     */
+    QuestionBuilder addOptions(final List<String> options);
+
+    /**
+     * Sets the answer field of a Question object
+     *
+     * @param answer the right answer for thw question
+     * @return
+     */
+    QuestionBuilder addAnswer(final String answer);
+
+    /**
+     * Checks whether all the fields are set for a question and return the object or logs the error.
+     *
+     * @return
+     */
+    Question build() throws Exception;
+}
+
+/**
  * Stores one question.
  */
 class Question{
@@ -82,38 +118,6 @@ class Question{
 }
 
 /**
- * The Question class builder abstraction
- */
-interface QuestionBuilder{
-    /**
-     * Sets the image field of a Question object
-     * @param image the image name for the question
-     * @return
-     */
-    QuestionBuilder addImage(final String image);
-
-    /**
-     * Sets the options field of a Question object
-     * @param options the 4 possible answers for the question
-     * @return
-     */
-    QuestionBuilder addOptions(final List<String> options);
-
-    /**
-     * Sets the answer field of a Question object
-     * @param answer the right answer for thw question
-     * @return
-     */
-    QuestionBuilder addAnswer(final String answer);
-
-    /**
-     * Checks whether all the fields are set for a question and return the object or logs the error.
-     * @return
-     */
-    Question build() throws Exception;
-}
-
-/**
  * The Question class builder
  */
 class QuestionBuilderImpl implements QuestionBuilder {
@@ -159,13 +163,13 @@ public class Test{
     private List<Question> test;
     private int n;
     private String fileName;
-    Context context;
-    Random rnd = new Random();
+    private Context context;
+    private Random rnd = new Random();
 
     /**
      * Creates a new test object
      * @param n is the number of questions in the test
-     * @param path is the file name that contains all the possible questions (in the assets folder)
+     * @param fileName is the file name that contains all the possible questions (in the assets folder)
      */
     public Test(Context context, int n, String fileName){
         this.n = n;
@@ -200,7 +204,7 @@ public class Test{
 
         while(indexes.size() != n){
             int num = rnd.nextInt(allQuestions.size());
-            Log.i(this.toString(),"Generált szám: " + num);
+            Log.i(this.toString(),"Random number: " + num);
             indexes.add(num);
         }
         for (int i = 0; i < allQuestions.size(); i++) {

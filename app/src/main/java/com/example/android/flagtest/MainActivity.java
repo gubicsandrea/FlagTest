@@ -15,7 +15,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    Test test;
+    private Test test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

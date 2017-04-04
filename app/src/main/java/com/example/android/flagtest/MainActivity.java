@@ -1,10 +1,11 @@
 package com.example.android.flagtest;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -68,14 +69,13 @@ public class MainActivity extends AppCompatActivity {
         List<String> answers = new ArrayList<String>();
         int count = 0;
         for(int i = 0; i < test.getN(); i++){
-            for(int j = 1; j < 5; j++) {
-                String idString = "group" + (i + 1) + "_option" + j;
-                int id = getId(idString,R.id.class);
-                RadioButton radioButton = (RadioButton) findViewById(id);
-                if (radioButton.isChecked()){
-                    answers.add(radioButton.getText().toString());
-                    count++;
-                }
+            String idString = "group" + (i + 1);
+            int id = getId(idString, R.id.class);
+            RadioGroup radioGroup = (RadioGroup) findViewById(id);
+            RadioButton radioButton = (RadioButton) findViewById(radioGroup.getCheckedRadioButtonId());
+            if (radioButton != null) {
+                answers.add(radioButton.getText().toString());
+                count++;
             }
         }
 

@@ -55,4 +55,19 @@
         <item name="android:text">@string/ready_button_text</item>
         <item name="android:textSize">@dimen/button_text_size</item>
     </style>
+
+    <style name="ResultText">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/base_text_size</item>
+    </style>
+
+    <style name="toplistHeadText">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/base_text_size</item>
+    </style>
 </resources>

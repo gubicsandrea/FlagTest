@@ -5,4 +5,16 @@
     <string name="file_name">euroflags_hu.test</string>
     <string name="not_all_answered">Még nem válaszoltad meg az összes kérdést.</string>
     <string name="test_result">%1$d jó választ adtál.</string>
+    <string name="new_game">Új játék</string>
+    <string name="empty_list">Még nincs egyetlen eredmény sem.</string>
+    <string name="hall_of_fame_title">Toplista</string>
+    <string name="load_error">Nem sikerült betölteni az eddigi eredményeket.</string>
+    <string name="name">Név</string>
+    <string name="name_error">Töltsd ki a név mezőt, ha szeretnéd elmenteni az eredményed!</string>
+    <string name="ok_button_label">Tovább a toplistához</string>
+    <string name="points">pont</string>
+    <string name="rank">Helyezés</string>
+    <string name="save_error">Hiba az eredmények mentésekor.</string>
+    <string name="save_result_label">Mentsd el az eredményem</string>
+    <string name="user_name">Név:</string>
 </resources>

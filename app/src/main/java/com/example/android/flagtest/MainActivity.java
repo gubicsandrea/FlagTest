@@ -1,5 +1,6 @@
 package com.example.android.flagtest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -88,6 +89,10 @@ public class MainActivity extends AppCompatActivity {
             int rightAnswerCount = test.checkAnswers(answers);
             message = getResources().getString(R.string.test_result,rightAnswerCount);
             Toast.makeText(this.getApplicationContext(),message,Toast.LENGTH_SHORT).show();
+            //Continue to PersonalInfo Activity
+            Intent intent = new Intent(getApplicationContext(), PersonalInfo.class);
+            intent.putExtra("points", rightAnswerCount);
+            startActivity(intent);
         }
     }
 }
